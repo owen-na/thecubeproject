@@ -1,0 +1,10 @@
+.postCard {
+    display: flex;
+    width: 75%;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    border: 2px white solid;
+    margin-top: 5%;
+}
