@@ -5,12 +5,16 @@ import Top from '../components/top/top'
 import TestPost from '../components/post/post'
 const inter = Inter({ subsets: ['latin'] })
 
+function OffCLick() {
+
+}
+
 export default function Home() {
   return (
     <>
-     <Top></Top>
-     <Cube></Cube>
-     <TestPost></TestPost>
+     <Top />
+     {/* <Cube /> */}
+     <TestPost />
     </>
   )
 }
