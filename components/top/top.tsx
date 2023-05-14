@@ -18,7 +18,10 @@ export default function top() {
             className={styles.mainImage}
             alt='ascii-gif'
             />
-            <h1>The Cube Project: Programming LFG</h1>
+            <div className={styles.title}>
+                <h1>The Cube Project: Programming LFG</h1>
+                <button>Access User Base</button>
+            </div>
             <div className={styles.loginstatus}>
                 <button>Login</button>
                 <button>Sign Up</button>

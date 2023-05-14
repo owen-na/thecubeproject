@@ -3,8 +3,9 @@
     width: 75%;
     height: fit-content;
     margin: auto;
-    text-align: center;
+    text-align: start;
     flex-direction: column;
     border: 2px white solid;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
