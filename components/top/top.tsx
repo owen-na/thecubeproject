@@ -1,6 +1,7 @@
 import styles from '@styles/top.module.css'
 import Image from 'next/image'
 import MyGif from '../../assets/215984.gif'
+import Link from 'next/link';
 
 // This function will return the users name on load if there are logged in with cookies
 // With a welcome back, ________
@@ -29,8 +30,12 @@ export default function top() {
                 <button>Access User Base</button>
             </div>
             <div className={styles.loginstatus}>
-                <button>Login</button>
-                <button>Sign Up</button>
+                <Link href="/login">
+                    <button className={styles.loginButton}>Login</button>
+                </Link>
+                <Link href="/login">
+                <button className={styles.loginButton}>Sign Up</button>
+                </Link>
             </div>
         </div>
     )
