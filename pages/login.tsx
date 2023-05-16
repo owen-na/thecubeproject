@@ -1,5 +1,7 @@
 import { useSession, signIn, signOut } from "next-auth/react";
 
+// does not fully work yet since github keys are not in the env LOL
+
 export default function Login() {
     const {data: session} = useSession()
 
