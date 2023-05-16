@@ -10,12 +10,18 @@ function Authinticated() {
     
 }
 
+const imageStyle = {
+    borderRadius: '25%',
+
+};
+
 export default function top() {
     return (
         <div className={styles.header}>
             <Image
             src={MyGif}
             className={styles.mainImage}
+            style={imageStyle}
             alt='ascii-gif'
             />
             <div className={styles.title}>

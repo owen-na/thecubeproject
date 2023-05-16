@@ -4,21 +4,21 @@
     gap: 5%;
     border: 2px white solid;
     margin-bottom: 10%;
-    width: 100%;
-    height: 25%;
+    width: 100vw;
+    height: 40vh;
     padding: 5%;
     float: left;
 }
 
 .loginstatus {
-    position: relative; /* Don't know if this is the right fix either */
-    left: 10%;          /* To help with moving it to the right side... */
+    position: relative; /* Don't know if this is the right fix either */          
+    left: 30%;/* To help with moving it to the right side... */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     background-color: grey;
-    width: 25%;     /* The width works here */
-    height: 20em;   /* Need to figure out why em works, but not height */
+    width: 20%;     /* The width works here */
+    height: 120%;   /* Need to figure out why em works, but not height */
     flex-direction: column;
     border-radius: 25%;
     border: 2px white solid;
@@ -31,9 +31,9 @@
 }
 
 .mainImage {
-    border-radius: 25%;
-    width: 15%;
-    height: 15%;
+    width: 12.5%;
+    object-fit: cover;
+    height: 100%;
 }
 
 .title button {

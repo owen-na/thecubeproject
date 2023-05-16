@@ -1,17 +1,18 @@
-import NextAuth from "next-auth";
-import GitHubProvider from "next-auth/providers";
+import NextAuth from "next-auth"
+import GithubProvider from "next-auth/providers/github"
 
-const authOptions = {
+export const authOptions = {
+  // Configure one or more authentication providers
   providers: [
-    GitHubProvider ({
+    GithubProvider({
       clientId: process.env.GITHUB_ID,
       clientSecret: process.env.GITHUB_SECRET,
     }),
     // ...add more providers here
   ],
-};
+}
 
-export default NextAuth(authOptions);
+export default NextAuth(authOptions)
 
 
 // no idea if this can even be a js file in a ts project LOL
