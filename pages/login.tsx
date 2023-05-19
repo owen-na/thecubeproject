@@ -9,6 +9,7 @@ export default function Login() {
         return (
             <div>
                 <p>should just display back to main page</p>
+                <button onClick={() => signOut()}>test</button>
             </div>
         )
     }
@@ -16,6 +17,7 @@ export default function Login() {
     return ( // else redirect them to a signed in page to get them started
         <div>
             <p>not funny</p>
+            <button onClick={() => signIn()}>test</button>
         </div>
     )
 }
