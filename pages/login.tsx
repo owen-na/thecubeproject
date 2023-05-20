@@ -15,9 +15,10 @@ export default function Login() {
     }
 
     return ( // else redirect them to a signed in page to get them started
-        <div>
-            <p>not funny</p>
-            <button onClick={() => signIn()}>test</button>
-        </div>
+        // <div>
+        //     <p>not funny</p>
+        //     <button onClick={() => signIn()}>test</button>
+        // </div>
+        signIn() // does this work?
     )
 }
