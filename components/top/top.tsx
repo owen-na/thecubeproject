@@ -8,27 +8,27 @@ import { useSession } from 'next-auth/react';
 // With a welcome back, ________
 // login and sighnup will be based on github creds. 
 // Next.authjs prob
-function Authenticated() {
-    const { data: session, status } = useSession();
+// function Authenticated() {
+//     const { data: session, status } = useSession();
 
     
-  if (status === 'loading') {
-    return <p>Loading screen here/splash page</p>;
-  }
-    if (!session) {
-        return (
-            <>
-            <p>not authd, not sure what to do here</p>
-            </>
-        )
-    }
+//   if (status === 'loading') {
+//     return <p>Loading screen here/splash page</p>;
+//   }
+//     if (!session) {
+//         return (
+//             <>
+//             <p>not authd, not sure what to do here</p>
+//             </>
+//         )
+//     }
 
-    return (
-        <>
-      <p>Welcome back, {session.user!.name}!</p>
-    </>
-  );
-}
+//     return (
+//         <>
+//       <p>Welcome back, {session.user!.name}!</p>
+//     </>
+//   );
+// }
 
 const imageStyle = {
     borderRadius: '25%',
@@ -50,16 +50,16 @@ export default function top() {
                 <button>Access User Base</button>
             </div>
             <div className={styles.loginstatus}>
-                {status === 'loading' && <p>Loading...</p>}
+            {status === 'loading'}
         {session ? (
+        <>
           <p>Welcome back, {session.user!.name}!</p>
+          <button className={styles.loginhButton}>Sign Out</button>
+        </>
         ) : (
             <>
                 <Link href="/login">
                     <button className={styles.loginButton}>Login</button>
-                </Link>
-                <Link href="/login">
-                <button className={styles.loginButton}>Sign Up</button>
                 </Link>
                 </>
         )}
