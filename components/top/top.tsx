@@ -47,7 +47,9 @@ export default function top() {
             />
             <div className={styles.title}>
                 <h1>The Cube Project: Programming LFG</h1>
+                <Link href="/maincube">
                 <button>Access User Base</button>
+                </Link>
             </div>
             <div className={styles.loginstatus}>
             {status === 'loading'}
