@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
      <Top />
-     {/* <Cube /> */}
+    {/* <Cube /> */}
     {/* {emptyPostChecker} doesnt work for some reason??? */}
      <TestPost />
      <Footer />
